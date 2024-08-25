@@ -1,12 +1,14 @@
 const Headers = () => {
+  const textStyle = { fontSize: '14px', color: 'white' };
   return (
-    <div className="flex p-10">
+    <div style={{ display: 'flex', justifyContent: 'space-between', background: 'black', padding: '20px 80px' }}>
+      <div style={{ display: 'flex',alignItems:"center", gap:"48px"}}>
+        <div style={{  ...textStyle }} className="hover:underline underline-offset-8">Home</div>
+        <div style={{  ...textStyle }} className="hover:underline underline-offset-8">Work</div>
+        <div style={{  ...textStyle }} className="hover:underline underline-offset-8">Contact Us</div>
+      </div>
 
-      <div className="px-10">Home</div>
-      <div className="px-10">Work</div>
-      <div className="px-10">Contact Us</div>
-
-      <img src='logo192.png' alt="logo"></img>
+      <img src="logo192.png" width="30px" alt="logo"></img>
     </div>
   );
 };
